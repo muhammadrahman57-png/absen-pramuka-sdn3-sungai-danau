@@ -148,7 +148,7 @@ async function muat() {
 async function masuk() {
   PIN = $('#pin').value;
   try {
-    if (cfg.url) await muat(); else if (PIN !== '1234') throw new Error('PIN uji coba: 1234');
+    if (cfg.url) await muat(); else if (PIN !== '30303570') throw new Error('PIN uji coba: 1234');
     $('#login').hidden = true; $('#app').hidden = false; $('#sk').textContent = cfg.nama; go('dash');
     $('#sync').textContent = cfg.url ? 'Tersinkron dengan Spreadsheet' : 'Mode lokal (belum terhubung)';
   } catch (e) { $('#err').textContent = e.message }
